@@ -56,4 +56,13 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    implementation(libs.ktor.client.core)
+    implementation(libs.ktor.client.cio) // CIO engine for Android
+    implementation(libs.ktor.client.logging) // Logging for debugging
+    implementation(libs.ktor.client.content.negotiation) // Content negotiation
+    implementation(libs.ktor.serialization.kotlinx.json) // JSON serialization
+
+    // Coroutine Support
+    implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.kotlinx.coroutines.android)
 }
